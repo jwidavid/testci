@@ -103,7 +103,10 @@ function make_wpscan_api_request( $api_url ) {
  		array_push( $response, [ 'id' => $vulnerability['id'], 'title' => $vulnerability['title'], 'fixed_in' => $vulnerability['fixed_in'], 'description' => $vulnerability['description'] ] );
  	}
   	return $response;
- }
+}
+
+exit(1);
+
 
 $wp_content_path = $_ENV['WP_CONTENT_PATH'];
 
