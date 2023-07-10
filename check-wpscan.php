@@ -108,9 +108,6 @@ function make_wpscan_api_request( $api_url ) {
 $wp_content_path = $_ENV['WP_CONTENT_PATH'];
 $extensions = get_plugins_and_themes( $wp_content_path );
 
-echo json_encode( $extensions );
-exit(1);
-
 $found_vulns = false;
 
 foreach ( $extensions as $extension ) {
