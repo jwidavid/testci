@@ -105,10 +105,11 @@ function make_wpscan_api_request( $api_url ) {
   	return $response;
 }
 
+$wp_content_path = $_ENV['WP_CONTENT_PATH'];
+
+echo $wp_content_path;
 exit(1);
 
-
-$wp_content_path = $_ENV['WP_CONTENT_PATH'];
 
 $extensions = get_plugins_and_themes( $wp_content_path );
 
