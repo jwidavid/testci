@@ -105,7 +105,7 @@ function make_wpscan_api_request( $api_url ) {
   	return $response;
 }
 
-$wp_content_path = $_ENV['WP_CONTENT_PATH'];
+$wp_content_path = $_ENV['WPSCAN_TOKEN'];
 
 echo $wp_content_path;
 exit(1);
